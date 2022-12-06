@@ -1,2 +1,2 @@
 # SettingsObserver
-An android app to observe and record the changes of settings (Global, Secure, System).
+An android app to observe and record the changes of settings (Global, Secure, System) without using ANY PERMISSION!
