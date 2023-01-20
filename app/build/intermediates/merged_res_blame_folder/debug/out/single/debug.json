@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\layout_layout.xml.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\layout\\layout.xml"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_icon.xml.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\mipmap-anydpi-v26\\icon.xml"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\mipmap_icon.png.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\mipmap\\icon.png"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_icon.xml.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\icon.xml"
+    },
+    {
+        "merged": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
+        "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\layout\\item.xml"
+    }
+]

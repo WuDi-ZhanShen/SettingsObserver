@@ -1,0 +1,59 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="allsettings.observer"
+4    android:versionCode="2"
+5    android:versionName="2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:5:5-77
+11-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:6:5-77
+12-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:6:22-74
+13
+14    <application
+14-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:8:5-26:19
+15        android:debuggable="true"
+16        android:icon="@mipmap/icon"
+16-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:9:9-36
+17        android:label="SettingsObserver"
+17-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:10:9-41
+18        android:theme="@android:style/Theme.DeviceDefault" >
+18-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:11:9-59
+19        <activity
+19-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:12:9-22:20
+20            android:name="allsettings.observer.MainActivity"
+20-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:13:13-41
+21            android:configChanges="orientation|fontScale|fontWeightAdjustment|screenSize|smallestScreenSize|keyboardHidden|keyboard|uiMode"
+21-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:14:13-140
+22            android:exported="true"
+22-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:15:13-36
+23            android:launchMode="singleTask" >
+23-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:16:13-44
+24            <intent-filter>
+24-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:17:13-21:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:18:17-69
+25-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:18:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:20:17-77
+27-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:20:27-74
+28            </intent-filter>
+29        </activity>
+30
+31        <service
+31-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:23:9-25:38
+32            android:name="allsettings.observer.ObService"
+32-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:24:13-38
+33            android:enabled="true" />
+33-->D:\Users\root.DESKTOP-0A2F1J5\Documents\SettingsObserver\app\src\main\AndroidManifest.xml:25:13-35
+34    </application>
+35
+36</manifest>

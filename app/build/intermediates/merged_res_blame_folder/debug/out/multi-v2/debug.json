@@ -1,0 +1,69 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "157"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\build\\intermediates\\merged_res\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "125"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "91",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "155"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\root.DESKTOP-0A2F1J5\\Documents\\SettingsObserver\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "36",
+                        "endOffsets": "89"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "35",
+                        "endOffsets": "86"
+                    }
+                }
+            ]
+        }
+    ]
+}
