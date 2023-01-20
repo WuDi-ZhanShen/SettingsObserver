@@ -64,6 +64,11 @@ public class ObService extends Service {
             uriBlackList.add(Uri.parse("content://settings/system/peak_refresh_rate"));
             uriBlackList.add(Uri.parse("content://settings/secure/freeform_timestamps"));
             uriBlackList.add(Uri.parse("content://settings/secure/freeform_window_state"));
+            uriBlackList.add(Uri.parse("content://settings/secure/applock_mask_notify"));
+            uriBlackList.add(Uri.parse("content://settings/global/ble_scan_low_power_window_ms"));
+            uriBlackList.add(Uri.parse("content://settings/global/ble_scan_low_power_interval_ms"));
+            uriBlackList.add(Uri.parse("content://settings/system/apptimer_load_data_time"));
+            uriBlackList.add(Uri.parse("content://settings/global/fast_connect_ble_scan_mode"));
         }
 
         @Override
