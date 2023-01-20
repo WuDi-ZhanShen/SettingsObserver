@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="allsettings.observer"
+    android:versionCode="2"
+    android:versionName="2" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@mipmap/icon"
+        android:label="SettingsObserver"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name="allsettings.observer.MainActivity"
+            android:configChanges="orientation|fontScale|fontWeightAdjustment|screenSize|smallestScreenSize|keyboardHidden|keyboard|uiMode"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="allsettings.observer.ObService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

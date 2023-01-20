@@ -16,6 +16,8 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class ObService extends Service {
@@ -43,6 +45,7 @@ public class ObService extends Service {
 
     Notification.Builder notification;
     NotificationManager systemService;
+    List<Uri> uriBlackList = new ArrayList<>();
 
 
     public void setChangeListener(ChangeListener changeListener) {
@@ -53,25 +56,31 @@ public class ObService extends Service {
 
         public SettingsValueChangeContentObserver() {
             super(new Handler());
+            uriBlackList.add(Uri.parse("content://settings/system/launcher_state"));
+            uriBlackList.add(Uri.parse("content://settings/system/count_for_mi_connect"));
+            uriBlackList.add(Uri.parse("content://settings/system/screen_brightness"));
+            uriBlackList.add(Uri.parse("content://settings/system/contrast_alpha"));
+            uriBlackList.add(Uri.parse("content://settings/system/peak_refresh_rate"));
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
-            String uristr = uri.toString().replace("content://settings/", "");
-            String namespace = Pattern.compile("/").split(uristr)[0];
-            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
-            while (cursor != null && cursor.moveToNext()) {
-                String name = cursor.getString(1);
-                String value = cursor.getString(2);
-                listener.onChange(new String[]{namespace, name, value, "0"});
-                String inline = "类别：" + namespace + ",名称：" + name + ",值：" + value;
-                Toast.makeText(ObService.this, inline, Toast.LENGTH_SHORT).show();
-                notification.setContentText(inline).setContentTitle("监测到以下变动：");
-                systemService.notify(1, notification.build());
-
+            if (!uriBlackList.contains(uri)) {
+                String uristr = uri.toString().replace("content://settings/", "");
+                String namespace = Pattern.compile("/").split(uristr)[0];
+                Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+                while (cursor != null && cursor.moveToNext()) {
+                    String name = cursor.getString(1);
+                    String value = cursor.getString(2);
+                    listener.onChange(new String[]{namespace, name, value, "0"});
+                    String inline = "类别：" + namespace + ",名称：" + name + ",值：" + value;
+                    Toast.makeText(ObService.this, inline, Toast.LENGTH_SHORT).show();
+                    notification.setContentText(inline).setContentTitle("监测到以下变动：");
+                    systemService.notify(1, notification.build());
+                }
+                assert cursor != null;
+                cursor.close();
             }
-            assert cursor != null;
-            cursor.close();
 
         }
     }
