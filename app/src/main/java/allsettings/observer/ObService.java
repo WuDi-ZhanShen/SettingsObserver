@@ -14,6 +14,7 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -61,11 +62,14 @@ public class ObService extends Service {
             uriBlackList.add(Uri.parse("content://settings/system/screen_brightness"));
             uriBlackList.add(Uri.parse("content://settings/system/contrast_alpha"));
             uriBlackList.add(Uri.parse("content://settings/system/peak_refresh_rate"));
+            uriBlackList.add(Uri.parse("content://settings/secure/freeform_timestamps"));
+            uriBlackList.add(Uri.parse("content://settings/secure/freeform_window_state"));
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (!uriBlackList.contains(uri)) {
+                Log.w("mContentObs",uri.toString());
                 String uristr = uri.toString().replace("content://settings/", "");
                 String namespace = Pattern.compile("/").split(uristr)[0];
                 Cursor cursor = getContentResolver().query(uri, null, null, null, null);
